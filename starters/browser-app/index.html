@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hackathon App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Hackathon App</h1>
+        <p>Replace this with your app description</p>
+    </header>
+
+    <main>
+        <!-- Input section -->
+        <section id="input-section">
+            <h2>Input</h2>
+            <form id="main-form">
+                <label for="title">Title</label>
+                <input type="text" id="title" required>
+
+                <label for="description">Description</label>
+                <textarea id="description" rows="3"></textarea>
+
+                <button type="submit">Add</button>
+            </form>
+        </section>
+
+        <!-- Output section -->
+        <section id="output-section">
+            <h2>Results</h2>
+            <div id="results">
+                <p class="empty-state">No items yet. Add one above.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hackathon App</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            max-width: 800px; margin: 0 auto; padding: 2rem;
+            color: #333; background: #f9f9f9;
+        }
+        header { margin-bottom: 2rem; }
+        h1 { margin-bottom: 0.25rem; }
+        h2 { margin-bottom: 1rem; color: #555; }
+        form { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem; }
+        label { font-weight: 600; font-size: 0.9rem; }
+        input, textarea, select {
+            padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem;
+        }
+        button {
+            padding: 0.6rem 1.2rem; background: #0066cc; color: white;
+            border: none; border-radius: 4px; font-size: 1rem; cursor: pointer;
+            align-self: flex-start;
+        }
+        button:hover { background: #0052a3; }
+        .empty-state { color: #999; font-style: italic; }
+        .card {
+            background: white; border: 1px solid #e0e0e0;
+            border-radius: 6px; padding: 1rem; margin-bottom: 0.75rem;
+        }
+        .card h3 { margin-bottom: 0.25rem; }
+        .card p { color: #666; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Hackathon App</h1>
+        <p>Replace this with your app description</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Input</h2>
+            <form method="POST">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="3"></textarea>
+
+                <button type="submit">Add</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Results</h2>
+            {% if items %}
+                {% for item in items %}
+                <div class="card">
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.description }}</p>
+                </div>
+                {% endfor %}
+            {% else %}
+                <p class="empty-state">No items yet. Add one above.</p>
+            {% endif %}
+        </section>
+    </main>
+</body>
+</html>
