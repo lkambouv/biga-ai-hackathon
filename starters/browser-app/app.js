@@ -1,5 +1,10 @@
-// In-memory data store
-const items = [];
+// Load saved items from localStorage, or start with an empty array
+let items = JSON.parse(localStorage.getItem('items') || '[]');
+
+// Save items to localStorage
+function saveItems() {
+    localStorage.setItem('items', JSON.stringify(items));
+}
 
 // Get references to DOM elements
 const form = document.getElementById('main-form');
@@ -13,13 +18,17 @@ form.addEventListener('submit', function (e) {
     const title = document.getElementById('title').value;
     const description = document.getElementById('description').value;
 
-    // Add to data store
+    // Add to data store and save
     items.push({ id: Date.now(), title, description });
+    saveItems();
 
     // Clear form and re-render
     form.reset();
     render();
 });
+
+// Render on page load to show any saved items
+render();
 
 // Render all items to the page
 function render() {

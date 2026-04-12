@@ -30,33 +30,42 @@ Request Bouvet GitHub Copilot access here:
 
 Once you have access, install the **GitHub Copilot** extension in VS Code and sign in with your GitHub account.
 
-### 4. Run the Setup Script
+### 4. Get the Repository
 
-The setup script installs useful tools (Git, Python, Node.js) and VS Code extensions.
+**Option A — Clone with Git** (if Git is installed):
+```bash
+git clone <repo-url>
+cd biga-hackathon
+```
 
-**macOS:**
+**Option B — Download as ZIP** (no Git needed):
+1. Go to the repository page on GitHub
+2. Click the green **Code** button → **Download ZIP**
+3. Extract the ZIP and open the folder in VS Code
+
+### 5. Install Tools
+
+You can install the required tools either manually or via Copilot Agent.
+
+**Option A — Using Copilot Agent** (recommended):
+1. Open the project folder in VS Code
+2. Open Copilot Agent (Cmd+Shift+I on macOS / Ctrl+Shift+I on Windows)
+3. Type: `/setup-environment`
+4. Copilot will detect your OS and run the correct setup script
+
+**Option B — Run the script manually:**
+
+macOS:
 ```bash
 chmod +x scripts/setup-mac.sh
 ./scripts/setup-mac.sh
 ```
 
-**Windows (PowerShell):**
+Windows (PowerShell):
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\scripts\setup-windows.ps1
 ```
-
----
-
-## Quick Start
-
-1. **Clone this repo**
-   ```bash
-   git clone <repo-url>
-   cd biga-hackathon
-   ```
-
-2. **Run the setup script** (see above)
 
 3. **Pick a starter template** — copy it to a new folder for your project:
    - `starters/browser-app/` — HTML + JavaScript, runs directly in the browser, zero setup

@@ -1,6 +1,6 @@
 # Working with AI in VS Code
 
-This guide explains how to use GitHub Copilot effectively to build your hackathon prototype. The key idea: **you describe what you want, AI helps you build it.**
+This guide explains how you can use GitHub Copilot effectively to build your hackathon prototype. The key idea: **you describe what you want, AI helps you build it.**
 
 ## The Core Workflow
 
@@ -59,6 +59,8 @@ Break your spec into small, concrete tasks. Check them off as you go. Copilot ca
 - [ ] Add rule engine to suggest actions
 - [ ] Show suggested actions below the signal table
 ```
+
+_Copilot can help you break features into manageable tasks!_
 
 ---
 

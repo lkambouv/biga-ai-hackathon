@@ -9,7 +9,7 @@ This repo includes two starter templates. Pick the one that fits your comfort le
 | Aspect | Details |
 |---|---|
 | Setup | None — open `index.html` in a browser |
-| Data storage | In-memory JavaScript arrays (data resets on page refresh) |
+| Data storage | localStorage (persists across page refreshes) |
 | Languages | HTML, CSS, JavaScript |
 | Frameworks | None (vanilla JS) |
 | Good for cases about | Prioritization tools, one-pagers, risk dashboards, any visual/interactive tool |
@@ -20,7 +20,7 @@ This repo includes two starter templates. Pick the one that fits your comfort le
 - Live Server extension gives auto-reload
 
 **Cons:**
-- Data doesn't persist between page loads (unless you add localStorage)
+- Data is stored in the browser only (not shared between devices)
 - Harder to do complex data processing
 
 **Getting started:**

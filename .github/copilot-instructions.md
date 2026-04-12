@@ -1,13 +1,12 @@
-## Hackathon Project Context
+## Project Context
 
-This is a hackathon repository for team leads and product owners building simple prototypes.
+This is a prototype project for team leads and product owners building simple applications.
 
 **Key constraints:**
-- Target audience: non-developers building MVPs in a 2-hour hackathon
+- Target audience: non-developers building MVPs
 - No external AI/LLM API calls in application code — use rules, scoring, templates, and mappings for logic
 - GitHub Copilot is used at development time, not runtime
 - Prefer simple, readable code with clear comments over clever abstractions
-- Focus on working prototypes, not production quality
 - Keep functions short and self-explanatory
 - Use descriptive variable names
 
@@ -17,3 +16,12 @@ This is a hackathon repository for team leads and product owners building simple
 - Avoid unnecessary dependencies or frameworks
 - Prioritize getting something working over making it perfect
 - If the user references `specs.md` or `todo.md`, read those files for full context
+
+**Working with the user:**
+- When the user's intent is unclear, ask a clarifying question before proceeding
+- Do not assume what the user wants — confirm before making large or structural changes
+
+**Keeping documents up to date:**
+- After making code changes, update `todo.md` to reflect completed and new tasks
+- If changes affect the project scope or features, update `specs.md` accordingly
+- Keep `.instructions.md` current if the tech stack or conventions change
