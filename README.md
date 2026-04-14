@@ -21,12 +21,12 @@ Download and install [Visual Studio Code](https://code.visualstudio.com/Download
 ### 2. GitHub Account
 
 You need a GitHub account connected to Bouvet.
-<!-- TODO: Add Bouvet-specific GitHub account instructions link -->
+See FAQ https://minside.bouvet.no/metoder/GitHub%20Enterprise
 
 ### 3. Get GitHub Copilot Access
 
-Request Bouvet GitHub Copilot access here:
-<!-- TODO: Add Bouvet Copilot access URL -->
+Request Bouvet GitHub Copilot by following the guid
+https://minside.bouvet.no/metoder/GitHub%20Enterprise
 
 Once you have access, install the **GitHub Copilot** extension in VS Code and sign in with your GitHub account.
 
