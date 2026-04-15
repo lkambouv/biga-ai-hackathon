@@ -21,6 +21,7 @@ Download and install [Visual Studio Code](https://code.visualstudio.com/Download
 ### 2. GitHub Account
 
 You need a GitHub account connected to Bouvet.
+Those of you with access through Github Copilot Enterprise through other channels (access through delivery/client etc.) can use this if it's aligned with usage guidelines for that delivery/client.
 See FAQ https://minside.bouvet.no/metoder/GitHub%20Enterprise
 
 ### 3. Get GitHub Copilot Access
