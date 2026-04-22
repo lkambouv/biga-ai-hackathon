@@ -68,7 +68,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\scripts\setup-windows.ps1
 ```
 
-3. **Pick a starter template** — copy it to a new folder for your project:
+### 6. Pick a starter template — copy it to a new folder for your project:
    - `starters/browser-app/` — HTML + JavaScript, runs directly in the browser, zero setup
    - `starters/python-app/` — Python + Flask, good for data processing and structured logic
 
@@ -76,11 +76,11 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
    cp -r starters/browser-app my-project
    ```
 
-4. **Edit `specs.md`** in your project folder — describe what you want to build
+### 7. Edit `specs.md` in your project folder — describe what you want to build
 
-5. **Edit `todo.md`** — break your spec into small tasks
+### 8. Edit `todo.md` — break your spec into small tasks
 
-6. **Open VS Code and start building with Copilot**
+### 9. Open VS Code and start building with Copilot
    - Open the project folder in VS Code
    - Use **Copilot Agent mode** (Cmd/Ctrl+Shift+I) to start working through your tasks
    - Point Copilot to your `specs.md` and `todo.md` for context
